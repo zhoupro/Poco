@@ -1,14 +1,15 @@
 # coding=utf-8
 
 
-import time
 import json
-from airtest_hunter import AirtestHunter, open_platform
-from poco.drivers.netease.internal import NeteasePoco
+import time
 
-from pocounit.case import PocoTestCase
-from airtest.core.api import connect_device, device as current_device
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
+from airtest_hunter import AirtestHunter, open_platform
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
+from poco.drivers.netease.internal import NeteasePoco
+from pocounit.case import PocoTestCase
 
 
 class Case(PocoTestCase):
@@ -40,11 +41,11 @@ class Case(PocoTestCase):
 # print poco('npc_conversation').offspring('list_options').offspring('Widget')[0].offspring('txt_content').nodes[0].node.data
 
 from airtest.core.api import connect_device
-from poco.utils.track import track_sampling, MotionTrack, MotionTrackBatch
-from poco.utils.airtest.input import AirtestInput
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 from poco.drivers.cocosjs import CocosJsPoco
+from poco.utils.airtest.input import AirtestInput
 from poco.utils.device import VirtualDevice
+from poco.utils.track import MotionTrack, MotionTrackBatch, track_sampling
 
 # dev = connect_device('Android://10.252.60.142:5039/a783575e')
 dev = VirtualDevice('10.254.49.151')

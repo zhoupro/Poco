@@ -1,8 +1,9 @@
 # coding=utf-8
 
 import time
-from poco.exceptions import InvalidOperationException
+
 from poco.drivers.unity3d.test.tutorial.case import TutorialCase
+from poco.exceptions import InvalidOperationException
 
 
 class InvalidOperationExceptionTutorial(TutorialCase):

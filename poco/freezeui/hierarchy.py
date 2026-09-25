@@ -3,10 +3,9 @@
 from poco.sdk.AbstractDumper import AbstractDumper
 from poco.sdk.AbstractNode import AbstractNode
 from poco.sdk.Attributor import Attributor
-from poco.sdk.Selector import Selector
 from poco.sdk.exceptions import UnableToSetAttributeException
 from poco.sdk.interfaces.hierarchy import HierarchyInterface
-
+from poco.sdk.Selector import Selector
 
 __all__ = ['FrozenUIDumper', 'FrozenUIHierarchy']
 

@@ -1,9 +1,9 @@
 # coding=utf-8
 
-from typing import Iterable, Iterator, Text, Tuple, Union, List, Dict, Any, NoReturn
+from typing import Any, Dict, Iterable, Iterator, List, NoReturn, Text, Tuple, Union
 
-from poco.pocofw import Poco
 from poco.gesture import PendingGestureAction
+from poco.pocofw import Poco
 from poco.sdk.AbstractNode import AbstractNode
 
 class UIObjectProxy(object):

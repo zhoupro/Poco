@@ -1,8 +1,9 @@
 # encoding=utf-8
-from .simplerpc import RpcAgent, RpcConnectionError
-from . import simplerpc
-import warnings
 import time
+import warnings
+
+from . import simplerpc
+from .simplerpc import RpcAgent, RpcConnectionError
 
 
 class RpcClient(RpcAgent):

@@ -1,10 +1,10 @@
 # coding=utf-8
 
 import time
-from pocounit.case import PocoTestCase
-from pocounit.addons.poco.action_tracking import ActionTracker
 
 from poco.drivers.unity3d import UnityPoco
+from pocounit.addons.poco.action_tracking import ActionTracker
+from pocounit.case import PocoTestCase
 
 
 class TutorialCase(PocoTestCase):

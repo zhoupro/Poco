@@ -1,8 +1,8 @@
 # coding=utf-8
 
 
-from poco.sdk.AbstractDumper import AbstractDumper
 from poco.drivers.osx.sdk.OSXUINode import OSXUINode
+from poco.sdk.AbstractDumper import AbstractDumper
 from poco.sdk.exceptions import InvalidSurfaceException
 
 

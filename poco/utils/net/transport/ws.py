@@ -1,7 +1,7 @@
 # coding=utf-8
 
-import time
 import threading
+import time
 import uuid
 
 from poco.sdk.std.transport import Transport
@@ -9,9 +9,9 @@ from poco.utils import six
 from poco.utils.net.transport.simple_wss import SimpleWebSocketServer, WebSocket
 
 if six.PY3:
-    from queue import Queue, Empty
+    from queue import Empty, Queue
 else:
-    from Queue import Queue, Empty
+    from Queue import Empty, Queue
 
 
 class WsSocket(Transport):

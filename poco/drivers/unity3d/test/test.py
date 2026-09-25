@@ -2,13 +2,13 @@
 
 import base64
 import json
-import traceback
 import time
+import traceback
 import unittest
 
+from airtest.core.api import connect_device
 from poco.drivers.std.test.simple import TestStandardFunction
 from poco.drivers.unity3d.unity3d_poco import UnityPoco
-from airtest.core.api import connect_device
 
 
 class TestU3dDriverAndroid(TestStandardFunction):

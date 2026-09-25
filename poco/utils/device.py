@@ -1,8 +1,9 @@
 # coding=utf-8
 from __future__ import absolute_import
 
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
 from airtest.core.device import Device
-from airtest.core.api import connect_device, device as current_device
 from airtest.core.error import NoDeviceError
 
 

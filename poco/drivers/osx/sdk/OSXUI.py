@@ -1,21 +1,22 @@
 # coding=utf-8
 
-import time
 import base64
-import zlib
-import re
-import pyautogui
-import atomac
 import operator
-from pynput.keyboard import Controller
+import re
+import time
+import zlib
+
+import atomac
+import pyautogui
+from poco.drivers.osx.sdk.OSXUIDumper import OSXUIDumper
+from poco.drivers.osx.sdk.OSXUIFunc import OSXFunc
+from poco.sdk.exceptions import InvalidSurfaceException, NonuniqueSurfaceException, UnableToSetAttributeException
 from poco.sdk.std.rpc.controller import StdRpcEndpointController
 from poco.sdk.std.rpc.reactor import StdRpcReactor
 from poco.utils.net.transport.tcp import TcpSocket
-from poco.drivers.osx.sdk.OSXUIDumper import OSXUIDumper
-from poco.sdk.exceptions import UnableToSetAttributeException, NonuniqueSurfaceException, InvalidSurfaceException
-from poco.utils.six import string_types, PY2
+from poco.utils.six import PY2, string_types
 from poco.utils.six.moves import reduce
-from poco.drivers.osx.sdk.OSXUIFunc import OSXFunc
+from pynput.keyboard import Controller
 
 DEFAULT_PORT = 15004
 DEFAULT_ADDR = ('0.0.0.0', DEFAULT_PORT)

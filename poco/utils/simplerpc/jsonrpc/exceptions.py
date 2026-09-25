@@ -1,6 +1,7 @@
 """ JSON-RPC Exceptions."""
-from . import six
 import json
+
+from . import six
 
 
 class JSONRPCError(object):

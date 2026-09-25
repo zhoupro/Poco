@@ -1,13 +1,12 @@
 # coding=utf-8
 
-from typing import Iterable, Iterator, Text, Tuple, Union, List, Dict, Any, NoReturn
+from typing import Any, Dict, Iterable, Iterator, List, NoReturn, Text, Tuple, Union
 
 from poco.pocofw import Poco
+from poco.sdk.interfaces.command import CommandInterface
 from poco.sdk.interfaces.hierarchy import HierarchyInterface
 from poco.sdk.interfaces.input import InputInterface
 from poco.sdk.interfaces.screen import ScreenInterface
-from poco.sdk.interfaces.command import CommandInterface
-
 
 class PocoAgent(object):
     def __init__(self,

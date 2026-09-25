@@ -1,10 +1,11 @@
 # coding=utf-8
 
 import fnmatch
-import atomac
+
 import AppKit
-from atomac import _a11y
+import atomac
 import Quartz
+from atomac import _a11y
 
 pressID = [None, Quartz.kCGEventLeftMouseDown,
            Quartz.kCGEventRightMouseDown, Quartz.kCGEventOtherMouseDown]

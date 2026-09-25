@@ -1,11 +1,13 @@
 """ Test Django Backend."""
 from __future__ import absolute_import
+
+import json
 import os
 
 from django.core.urlresolvers import RegexURLPattern
 from django.test import TestCase
+
 from ...backend.django import JSONRPCAPI, api
-import json
 
 
 class TestDjangoBackend(TestCase):

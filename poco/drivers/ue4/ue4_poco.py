@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
 from poco.drivers.std import StdPoco
 from poco.drivers.ue4.device import UE4EditorWindow
-from airtest.core.api import connect_device, device as current_device
 
 __all__ = ['UE4Poco', 'DEFAULT_PORT', 'DEFAULT_ADDR']
 DEFAULT_PORT = 5001

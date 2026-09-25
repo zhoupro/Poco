@@ -6,13 +6,13 @@ import traceback
 import warnings
 
 from .acceleration import PocoAccelerationMixin
-from .exceptions import PocoTargetTimeout, InvalidOperationException
-from .proxy import UIObjectProxy
 from .agent import PocoAgent
+from .exceptions import InvalidOperationException, PocoTargetTimeout
 from .freezeui.utils import create_immutable_hierarchy
-from .utils.track import MotionTrackBatch
-from .utils.multitouch_gesture import make_pinching
 from .gesture import PendingGestureAction
+from .proxy import UIObjectProxy
+from .utils.multitouch_gesture import make_pinching
+from .utils.track import MotionTrackBatch
 
 __author__ = 'lxn3032'
 

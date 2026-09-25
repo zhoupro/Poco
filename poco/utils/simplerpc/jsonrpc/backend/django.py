@@ -1,19 +1,19 @@
 from __future__ import absolute_import
 
-from django.views.decorators.csrf import csrf_exempt
-from django.conf.urls import url
-from django.http import HttpResponse, HttpResponseNotAllowed
 import copy
 import json
 import logging
 import time
 
+from django.conf.urls import url
+from django.http import HttpResponse, HttpResponseNotAllowed
+from django.views.decorators.csrf import csrf_exempt
+
+from ..dispatcher import Dispatcher
 from ..exceptions import JSONRPCInvalidRequestException
 from ..jsonrpc import JSONRPCRequest
 from ..manager import JSONRPCResponseManager
 from ..utils import DatetimeDecimalEncoder
-from ..dispatcher import Dispatcher
-
 
 logger = logging.getLogger(__name__)
 

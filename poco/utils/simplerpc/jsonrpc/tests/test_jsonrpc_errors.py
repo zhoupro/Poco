@@ -1,20 +1,13 @@
 import json
 import sys
+
 if sys.version_info < (2, 7):
     import unittest2 as unittest
 else:
     import unittest
 
-from ..exceptions import (
-    JSONRPCError,
-    JSONRPCInternalError,
-    JSONRPCInvalidParams,
-    JSONRPCInvalidRequest,
-    JSONRPCMethodNotFound,
-    JSONRPCParseError,
-    JSONRPCServerError,
-    JSONRPCDispatchException,
-)
+from ..exceptions import JSONRPCDispatchException, JSONRPCError, JSONRPCInternalError, JSONRPCInvalidParams, \
+    JSONRPCInvalidRequest, JSONRPCMethodNotFound, JSONRPCParseError, JSONRPCServerError
 
 
 class TestJSONRPCError(unittest.TestCase):

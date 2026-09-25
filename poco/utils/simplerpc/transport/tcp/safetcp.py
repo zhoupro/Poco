@@ -1,7 +1,6 @@
 # _*_ coding:UTF-8 _*_
 import socket
 
-
 DEFAULT_TIMEOUT = 5
 DEFAULT_SIZE = 4096
 

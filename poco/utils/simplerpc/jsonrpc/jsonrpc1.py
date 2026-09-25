@@ -1,7 +1,6 @@
 from . import six
-
 from .base import JSONRPCBaseRequest, JSONRPCBaseResponse
-from .exceptions import JSONRPCInvalidRequestException, JSONRPCError
+from .exceptions import JSONRPCError, JSONRPCInvalidRequestException
 
 
 class JSONRPC10Request(JSONRPCBaseRequest):

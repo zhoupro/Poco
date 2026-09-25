@@ -1,9 +1,10 @@
 # coding=utf-8
-import websocket
 from threading import Thread
-from ..interfaces import IClient
+
+import websocket
 from poco.utils import six
 
+from ..interfaces import IClient
 
 DEFAULT_ADDR = "ws://localhost:5003"
 

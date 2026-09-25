@@ -1,17 +1,18 @@
 # coding=utf-8
-from __future__ import unicode_literals, division
+from __future__ import division, unicode_literals
 
-import math
 import copy
-import poco.utils.six as six
+import math
 import time
 from functools import wraps
 
+import poco.utils.six as six
+from poco.exceptions import InvalidOperationException, PocoNoSuchNodeException, PocoTargetRemovedException, \
+    PocoTargetTimeout
 from poco.gesture import PendingGestureAction
-from poco.exceptions import PocoTargetTimeout, InvalidOperationException, PocoNoSuchNodeException, PocoTargetRemovedException
 from poco.sdk.exceptions import UnableToSetAttributeException
-from poco.utils.query_util import query_expr, build_query
 from poco.utils.multitouch_gesture import make_pinching
+from poco.utils.query_util import build_query, query_expr
 
 __all__ = ['UIObjectProxy']
 

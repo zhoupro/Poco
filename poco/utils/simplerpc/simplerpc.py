@@ -8,11 +8,9 @@ import time
 import traceback
 import uuid
 
-from .jsonrpc import JSONRPCResponseManager, dispatcher
-from .jsonrpc.jsonrpc2 import JSONRPC20Response
+from .jsonrpc import JSONRPCResponseManager, dispatcher, six
 from .jsonrpc.exceptions import JSONRPCServerError
-from .jsonrpc import six
-
+from .jsonrpc.jsonrpc2 import JSONRPC20Response
 
 DEBUG = False
 BACKEND_UPDATE = False

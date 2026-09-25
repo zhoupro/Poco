@@ -2,7 +2,6 @@
 
 from poco.freezeui.hierarchy import FrozenUIDumper, FrozenUIHierarchy
 
-
 __all__ = ['create_immutable_hierarchy', 'create_immutable_dumper']
 
 

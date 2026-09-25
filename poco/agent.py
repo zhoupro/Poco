@@ -1,10 +1,10 @@
 # coding=utf-8
 
-from poco.utils.airtest import AirtestInput
+from poco.sdk.interfaces.command import CommandInterface
 from poco.sdk.interfaces.hierarchy import HierarchyInterface
 from poco.sdk.interfaces.input import InputInterface
 from poco.sdk.interfaces.screen import ScreenInterface
-from poco.sdk.interfaces.command import CommandInterface
+from poco.utils.airtest import AirtestInput
 
 __author__ = 'lxn3032'
 

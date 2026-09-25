@@ -3,23 +3,24 @@
 # @Email:  gzliuxin@corp.netease.com
 # @Date:   2017-07-14 19:47:51
 
-from poco.pocofw import Poco
 from poco.agent import PocoAgent
-from poco.freezeui.hierarchy import FrozenUIHierarchy, FrozenUIDumper
-from poco.utils.simplerpc.utils import sync_wrapper
+from poco.freezeui.hierarchy import FrozenUIDumper, FrozenUIHierarchy
+from poco.pocofw import Poco
+from poco.utils import six
 from poco.utils.airtest import AirtestInput, AirtestScreen
 from poco.utils.simplerpc.rpcclient import RpcClient
 from poco.utils.simplerpc.transport.ws import WebSocketClient
-from poco.utils import six
+from poco.utils.simplerpc.utils import sync_wrapper
+
 if six.PY3:
     from urllib.parse import urlparse
 else:
     from urlparse import urlparse
 
-from airtest.core.api import connect_device, device as current_device
-from poco.utils.device import default_device
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
 from airtest.core.helper import device_platform
-
+from poco.utils.device import default_device
 
 __all__ = ['CocosJsPoco']
 DEFAULT_PORT = 5003

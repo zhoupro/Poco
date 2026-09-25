@@ -1,15 +1,14 @@
 # coding=utf-8
 
-from airtest_hunter import open_platform, AirtestHunter
+from airtest_hunter import AirtestHunter, open_platform
 from hunter_cli.rpc.client import HunterRpcClient
-
-from poco.pocofw import Poco
 from poco.agent import PocoAgent
+from poco.pocofw import Poco
+from poco.utils import six
 from poco.utils.airtest.input import AirtestInput
 from poco.utils.airtest.screen import AirtestScreen
 from poco.utils.hrpc.hierarchy import RemotePocoHierarchy
 from poco.utils.hunter.command import HunterCommand
-from poco.utils import six
 
 __all__ = ['NeteasePoco']
 __author__ = 'lxn3032'

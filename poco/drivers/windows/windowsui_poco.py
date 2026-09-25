@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import threading
-from poco.drivers.std import StdPoco
-from poco.utils.device import VirtualDevice
-from poco.drivers.std import DEFAULT_ADDR, DEFAULT_PORT
-from poco.utils.simplerpc.utils import sync_wrapper
+
+from poco.drivers.std import DEFAULT_ADDR, DEFAULT_PORT, StdPoco
 from poco.exceptions import InvalidOperationException
+from poco.utils.device import VirtualDevice
+from poco.utils.simplerpc.utils import sync_wrapper
 
 
 class WindowsPoco(StdPoco):

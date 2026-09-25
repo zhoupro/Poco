@@ -1,13 +1,12 @@
 # coding=utf-8
 
-from typing import List, Union, NoReturn, Callable, Any, Text
+from typing import Any, Callable, List, NoReturn, Text, Union
 
 from .acceleration import PocoAccelerationMixin
-from .proxy import UIObjectProxy
 from .agent import PocoAgent
 from .gesture import PendingGestureAction
+from .proxy import UIObjectProxy
 from .utils.track import MotionTrack
-
 
 class Poco(PocoAccelerationMixin):
     def __init__(self, agent: PocoAgent, **options) -> Poco:

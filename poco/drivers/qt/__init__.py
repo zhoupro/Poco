@@ -6,7 +6,6 @@
 from poco.drivers.std import StdPoco
 from poco.utils.device import VirtualDevice
 
-
 __all__ = ['QtPoco']
 DEFAULT_PORT = 9001
 DEFAULT_ADDR = ("localhost", DEFAULT_PORT)

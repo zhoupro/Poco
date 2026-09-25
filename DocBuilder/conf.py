@@ -18,11 +18,10 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-import sys
 import shutil
+import sys
 
 from recommonmark.parser import CommonMarkParser
-
 
 # prepare tree structure
 this_dir = os.path.dirname(os.path.abspath(sys._getframe(0).f_code.co_filename))

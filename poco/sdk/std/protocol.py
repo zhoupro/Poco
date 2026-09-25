@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import struct
+
 import six
 
 HEADER_SIZE = 4

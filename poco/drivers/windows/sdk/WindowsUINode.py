@@ -1,8 +1,8 @@
 # coding=utf-8
 
 import uiautomation as UIAuto
-from poco.sdk.exceptions import UnableToSetAttributeException
 from poco.sdk.AbstractNode import AbstractNode
+from poco.sdk.exceptions import UnableToSetAttributeException
 
 
 class WindowsUINode(AbstractNode):

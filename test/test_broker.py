@@ -1,12 +1,12 @@
 # coding=utf-8
 
-import time
 import threading
+import time
 
 from poco.sdk.std.rpc.controller import StdRpcEndpointController
 from poco.sdk.std.rpc.reactor import StdRpcReactor
-from poco.utils.net.transport.tcp import TcpSocket
 from poco.utils.net.stdbroker import StdBroker
+from poco.utils.net.transport.tcp import TcpSocket
 
 
 def Dump(arg):

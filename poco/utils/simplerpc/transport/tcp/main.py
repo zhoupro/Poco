@@ -1,9 +1,8 @@
 # coding=utf-8
 
 from ..interfaces import IClient
-from .safetcp import Client, socket
 from .protocol import SimpleProtocolFilter
-
+from .safetcp import Client, socket
 
 DEFAULT_ADDR = ("0.0.0.0", 5001)
 

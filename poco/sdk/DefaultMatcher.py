@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import re
+
 from .exceptions import NoSuchComparatorException
 
 __author__ = 'lxn3032'

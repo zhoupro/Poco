@@ -1,17 +1,13 @@
 import json
 import sys
+
 if sys.version_info < (2, 7):
     import unittest2 as unittest
 else:
     import unittest
 
 from ..exceptions import JSONRPCInvalidRequestException
-from ..jsonrpc2 import (
-    JSONRPC20Request,
-    JSONRPC20BatchRequest,
-    JSONRPC20Response,
-    JSONRPC20BatchResponse,
-)
+from ..jsonrpc2 import JSONRPC20BatchRequest, JSONRPC20BatchResponse, JSONRPC20Request, JSONRPC20Response
 
 
 class TestJSONRPC20Request(unittest.TestCase):

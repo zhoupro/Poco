@@ -3,9 +3,9 @@
 import json
 import threading
 
-from poco.utils.net.transport.ws import WsSocket
-from poco.utils.net.transport.tcp import TcpSocket
 from poco.utils import six
+from poco.utils.net.transport.tcp import TcpSocket
+from poco.utils.net.transport.ws import WsSocket
 
 if six.PY3:
     from urllib.parse import urlparse

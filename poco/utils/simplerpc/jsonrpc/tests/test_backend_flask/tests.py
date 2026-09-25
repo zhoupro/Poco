@@ -1,5 +1,6 @@
 import json
 import sys
+
 from mock import patch
 
 if sys.version_info < (2, 7):
@@ -10,6 +11,7 @@ else:
 # Flask is supported only for python2 and pyton3.3+
 if sys.version_info < (3, 0) or sys.version_info >= (3, 3):
     from flask import Flask
+
     from ...backend.flask import JSONRPCAPI, api
 
     @api.dispatcher.add_method

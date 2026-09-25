@@ -6,9 +6,9 @@ from_json methods could decide what format is it by presence of 'jsonrpc'
 attribute.
 
 """
-from .utils import JSONSerializable
 from .jsonrpc1 import JSONRPC10Request
 from .jsonrpc2 import JSONRPC20Request
+from .utils import JSONSerializable
 
 
 class JSONRPCRequest(JSONSerializable):

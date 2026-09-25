@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
+
 import airtest.report.report as report
+
 LOGDIR = "log"
 poco_func = ["record_ui"]
 

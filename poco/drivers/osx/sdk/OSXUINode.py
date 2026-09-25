@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from poco.sdk.exceptions import UnableToSetAttributeException
 from poco.sdk.AbstractNode import AbstractNode
+from poco.sdk.exceptions import UnableToSetAttributeException
 from poco.utils.six import string_types
 
 

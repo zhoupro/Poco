@@ -3,7 +3,7 @@
 from functools import wraps
 
 from airtest.core.api import device as current_device
-from airtest.core.api import touch, swipe, double_click
+from airtest.core.api import double_click, swipe, touch
 from airtest.core.helper import device_platform, logwrap
 from poco.sdk.interfaces.input import InputInterface
 
@@ -103,7 +103,7 @@ class AirtestInput(InputInterface):
             raise NotImplementedError
 
         # Android minitouch/maxtouch only, currently
-        from airtest.core.android.touch_methods.base_touch import DownEvent, MoveEvent, UpEvent, SleepEvent
+        from airtest.core.android.touch_methods.base_touch import DownEvent, MoveEvent, SleepEvent, UpEvent
 
         mes = []
         for e in events:

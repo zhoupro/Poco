@@ -2,27 +2,26 @@
 __author__ = 'lxn3032'
 
 
+import atexit
 import os
-import requests
+import threading
 import time
 import warnings
-import threading
-import atexit
 
+import requests
 from airtest.core.android.ime import YosemiteIme
 from airtest.core.error import AdbShellError, AirtestError
-
 from hrpc.client import RpcClient
 from hrpc.transport.http import HttpTransport
-from poco.pocofw import Poco
 from poco.agent import PocoAgent
+from poco.drivers.android.utils.installation import install, uninstall
+from poco.pocofw import Poco
 from poco.sdk.Attributor import Attributor
 from poco.sdk.interfaces.screen import ScreenInterface
-from poco.utils.hrpc.hierarchy import RemotePocoHierarchy
-from poco.utils.airtest.input import AirtestInput
 from poco.utils import six
+from poco.utils.airtest.input import AirtestInput
 from poco.utils.device import default_device
-from poco.drivers.android.utils.installation import install, uninstall
+from poco.utils.hrpc.hierarchy import RemotePocoHierarchy
 
 __all__ = ['AndroidUiautomationPoco', 'AndroidUiautomationHelper']
 this_dir = os.path.dirname(os.path.realpath(__file__))

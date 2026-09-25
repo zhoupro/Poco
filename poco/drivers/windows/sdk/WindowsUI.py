@@ -1,19 +1,20 @@
 # coding=utf-8
 
-import time
 import base64
+import operator
+import re
+import time
 import zlib
+
+import uiautomation as UIAuto
 import win32con
 import win32gui
-import re
-import operator
-import uiautomation as UIAuto
+from poco.drivers.windows.sdk.WindowsUIDumper import WindowsUIDumper
+from poco.sdk.exceptions import InvalidSurfaceException, NonuniqueSurfaceException, UnableToSetAttributeException
 from poco.sdk.std.rpc.controller import StdRpcEndpointController
 from poco.sdk.std.rpc.reactor import StdRpcReactor
 from poco.utils.net.transport.tcp import TcpSocket
-from poco.drivers.windows.sdk.WindowsUIDumper import WindowsUIDumper
-from poco.sdk.exceptions import UnableToSetAttributeException, NonuniqueSurfaceException, InvalidSurfaceException
-from poco.utils.six import string_types, PY2
+from poco.utils.six import PY2, string_types
 from poco.utils.six.moves import reduce
 
 DEFAULT_PORT = 15004

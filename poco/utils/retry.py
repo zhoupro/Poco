@@ -1,8 +1,8 @@
 # coding=utf-8
 __author__ = 'lxn3032'
 
-import time
 import functools
+import time
 
 
 def retries_when(exctypes, count=3, delay=0.0):

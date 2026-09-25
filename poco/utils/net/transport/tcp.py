@@ -1,18 +1,18 @@
 # coding=utf-8
 
 import errno
-import socket
 import select
+import socket
 import uuid
 
-from poco.sdk.std.transport import Transport
 from poco.sdk.std.protocol import SimpleProtocolFilter
+from poco.sdk.std.transport import Transport
 from poco.utils import six
 
 if six.PY3:
-    from queue import Queue, Empty
+    from queue import Empty, Queue
 else:
-    from Queue import Queue, Empty
+    from Queue import Empty, Queue
 
 
 class ConnectionReset(Exception):

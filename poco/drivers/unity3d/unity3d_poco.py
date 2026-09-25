@@ -3,10 +3,11 @@
 # @Email:  gzliuxin@corp.netease.com
 # @Date:   2017-07-14 19:47:51
 
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
 from poco.drivers.std import StdPoco
 from poco.drivers.unity3d.device import UnityEditorWindow
 from poco.exceptions import InvalidOperationException
-from airtest.core.api import connect_device, device as current_device
 
 __all__ = ['UnityPoco']
 DEFAULT_PORT = 5001

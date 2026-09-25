@@ -1,8 +1,8 @@
 # coding=utf-8
 
+from poco.drivers.windows.sdk.WindowsUINode import WindowsUINode
 from poco.sdk.AbstractDumper import AbstractDumper
 from poco.sdk.exceptions import InvalidSurfaceException
-from poco.drivers.windows.sdk.WindowsUINode import WindowsUINode
 
 
 class WindowsUIDumper(AbstractDumper):

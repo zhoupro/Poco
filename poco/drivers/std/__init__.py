@@ -1,22 +1,22 @@
 # coding=utf-8
 
-from poco.pocofw import Poco
+import socket
+
+from airtest.core.api import connect_device
+from airtest.core.api import device as current_device
+from airtest.core.helper import device_platform
 from poco.agent import PocoAgent
 from poco.drivers.std.attributor import StdAttributor
 from poco.drivers.std.dumper import StdDumper
-from poco.drivers.std.screen import StdScreen
 from poco.drivers.std.inputs import StdInput
+from poco.drivers.std.screen import StdScreen
 from poco.freezeui.hierarchy import FrozenUIHierarchy
+from poco.pocofw import Poco
 from poco.utils.airtest import AirtestInput
+from poco.utils.device import default_device
 from poco.utils.simplerpc.rpcclient import RpcClient
 from poco.utils.simplerpc.transport.tcp.main import TcpClient
 from poco.utils.simplerpc.utils import sync_wrapper
-from poco.utils.device import default_device
-
-from airtest.core.api import connect_device, device as current_device
-from airtest.core.helper import device_platform
-import socket
-
 
 __all__ = ['StdPoco', 'StdPocoAgent']
 DEFAULT_PORT = 15004

@@ -6,26 +6,26 @@ Copyright (c) 2013 Dave P.
 """
 
 import sys
+
 VER = sys.version_info[0]
 if VER >= 3:
     import socketserver
     from http.server import BaseHTTPRequestHandler
-    from io import StringIO, BytesIO
+    from io import BytesIO, StringIO
 else:
     import SocketServer
     from BaseHTTPServer import BaseHTTPRequestHandler
     from StringIO import StringIO
 
-import hashlib
 import base64
-import socket
-import struct
-import ssl
-import errno
 import codecs
+import errno
+import hashlib
+import socket
+import ssl
+import struct
 from collections import deque
 from select import select
-
 
 __all__ = ['WebSocket',
            'SimpleWebSocketServer',

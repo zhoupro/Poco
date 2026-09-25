@@ -4,7 +4,6 @@ import struct
 
 from poco.utils import six
 
-
 HEADER_SIZE = 4
 
 

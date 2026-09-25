@@ -2,13 +2,13 @@
 
 import base64
 import json
-import traceback
 import time
+import traceback
 import unittest
 
-from poco.drivers.std import StdPoco
-from poco.utils.simplerpc.utils import sync_wrapper, RemoteError
 from airtest.core.api import connect_device
+from poco.drivers.std import StdPoco
+from poco.utils.simplerpc.utils import RemoteError, sync_wrapper
 
 
 class TestStandardFunction(unittest.TestCase):

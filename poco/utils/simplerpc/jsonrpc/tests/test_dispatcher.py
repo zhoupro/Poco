@@ -1,5 +1,7 @@
-from ..dispatcher import Dispatcher
 import sys
+
+from ..dispatcher import Dispatcher
+
 if sys.version_info < (2, 7):
     import unittest2 as unittest
 else:

@@ -6,14 +6,13 @@ import logging
 import time
 from uuid import uuid4
 
-from flask import Blueprint, request, Response
+from flask import Blueprint, Response, request
 
+from ..dispatcher import Dispatcher
 from ..exceptions import JSONRPCInvalidRequestException
 from ..jsonrpc import JSONRPCRequest
 from ..manager import JSONRPCResponseManager
 from ..utils import DatetimeDecimalEncoder
-from ..dispatcher import Dispatcher
-
 
 logger = logging.getLogger(__name__)
 
